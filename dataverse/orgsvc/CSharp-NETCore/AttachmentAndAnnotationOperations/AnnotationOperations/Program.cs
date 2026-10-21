@@ -101,7 +101,7 @@ namespace PowerPlatform.Dataverse.CodeSamples
                 path: $"Downloaded{retrievedNote["filename"]}",
                 bytes: Convert.FromBase64String((string)retrievedNote["documentbody"]));
 
-            Console.WriteLine($"\tSaved the Word document to \\bin\\Debug\\net6.0\\Downloaded{retrievedNote["filename"]}.");
+            Console.WriteLine($"\tSaved the Word document to \\bin\\Debug\\net10.0\\Downloaded{retrievedNote["filename"]}.");
 
             // File to update
             Entity annotationForUpdate = new("annotation")
@@ -135,7 +135,7 @@ namespace PowerPlatform.Dataverse.CodeSamples
                 path: $"Downloaded{(string)retrievedUpdatedNote["filename"]}",
                 bytes: Convert.FromBase64String((string)retrievedUpdatedNote["documentbody"]));
 
-            Console.WriteLine($"\tSaved the Excel document to \\bin\\Debug\\net6.0\\Downloaded{retrievedUpdatedNote["filename"]}.");
+            Console.WriteLine($"\tSaved the Excel document to \\bin\\Debug\\net10.0\\Downloaded{retrievedUpdatedNote["filename"]}.");
 
             // Set MaxUploadFileSize to the maximum value
             Utility.SetMaxUploadFileSize(serviceClient, 131072000);
@@ -175,7 +175,7 @@ namespace PowerPlatform.Dataverse.CodeSamples
                 target: retrievedUpdatedNote.ToEntityReference());
 
             File.WriteAllBytes($"Downloaded{fileName}", bytes);
-            Console.WriteLine($"\tSaved the PDF document to \\bin\\Debug\\net6.0\\Downloaded{fileName}.");
+            Console.WriteLine($"\tSaved the PDF document to \\bin\\Debug\\net10.0\\Downloaded{fileName}.");
 
             //Clean up
 

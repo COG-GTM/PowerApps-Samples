@@ -61,7 +61,7 @@ namespace PowerApps.Samples
                 path: $"Downloaded{retrievedNote["filename"]}",
                 bytes: Convert.FromBase64String((string)retrievedNote["documentbody"]));
 
-            Console.WriteLine($"\tSaved the Word document to \\bin\\Debug\\net6.0\\Downloaded{retrievedNote["filename"]}.");
+            Console.WriteLine($"\tSaved the Word document to \\bin\\Debug\\net10.0\\Downloaded{retrievedNote["filename"]}.");
 
             // File to update
             JObject annotationForUpdate = new()
@@ -89,7 +89,7 @@ namespace PowerApps.Samples
                 path: $"Downloaded{retrievedUpdatedNote["filename"]}",
                 bytes: Convert.FromBase64String((string)retrievedUpdatedNote["documentbody"]));
 
-            Console.WriteLine($"\tSaved the Excel document to \\bin\\Debug\\net6.0\\Downloaded{retrievedUpdatedNote["filename"]}.");
+            Console.WriteLine($"\tSaved the Excel document to \\bin\\Debug\\net10.0\\Downloaded{retrievedUpdatedNote["filename"]}.");
 
 
             // Set MaxUploadFileSize to the maximum value
@@ -125,7 +125,7 @@ namespace PowerApps.Samples
                 target: noteRef);
 
             File.WriteAllBytes($"Downloaded{fileName}", bytes);
-            Console.WriteLine($"\tSaved the PDF document to \\bin\\Debug\\net6.0\\Downloaded{fileName}.");
+            Console.WriteLine($"\tSaved the PDF document to \\bin\\Debug\\net10.0\\Downloaded{fileName}.");
 
             // Download the file in a single request
             DownloadAnnotationFileRequest downloadFileRequest = new(annotationId: noteRef.Id.Value);
@@ -134,7 +134,7 @@ namespace PowerApps.Samples
                 await service.SendAsync<DownloadAnnotationFileResponse>(downloadFileRequest);
 
             File.WriteAllBytes($"DownloadedAgain{fileName}", downloadFileResponse.File);
-            Console.WriteLine($"\tSaved the PDF document to \\bin\\Debug\\net6.0\\DownloadedAgain{fileName}.");
+            Console.WriteLine($"\tSaved the PDF document to \\bin\\Debug\\net10.0\\DownloadedAgain{fileName}.");
 
 
             //Clean up

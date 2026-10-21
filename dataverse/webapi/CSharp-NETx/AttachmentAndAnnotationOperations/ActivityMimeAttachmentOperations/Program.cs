@@ -114,7 +114,7 @@ namespace PowerApps.Samples
                     target: attachmentRef).GetAwaiter().GetResult();
 
                 File.WriteAllBytes($"Downloaded{name}", bytes);
-                Console.WriteLine($"\tSaved the attachment to \\bin\\Debug\\net6.0\\Downloaded{name}.");
+                Console.WriteLine($"\tSaved the attachment to \\bin\\Debug\\net10.0\\Downloaded{name}.");
             }
 
             // Download an attachment file with a single request
@@ -123,7 +123,7 @@ namespace PowerApps.Samples
             var downloadAttachmentFileResponse = await service.SendAsync<DownloadAttachmentFileResponse>(request: downloadAttachmentFileRequest);
 
             File.WriteAllBytes($"DownloadedAgain{pdfDoc.Name}", downloadAttachmentFileResponse.File);
-            Console.WriteLine($"Saved the attachment to \\bin\\Debug\\net6.0\\DownloadedAgain{pdfDoc.Name}.");
+            Console.WriteLine($"Saved the attachment to \\bin\\Debug\\net10.0\\DownloadedAgain{pdfDoc.Name}.");
 
 
             // Delete the email activity and the attachments will be deleted as well

@@ -72,7 +72,7 @@ namespace PowerApps.Samples
                     filePropertyName: filePropertyName,
                     entityReference: createdAccountRef);
 
-                // File written to FileOperationsWithChunks\bin\Debug\net6.0
+                // File written to FileOperationsWithChunks\bin\Debug\net10.0
                 File.WriteAllBytes($"downloaded-{fileName}", file);
                 Console.WriteLine($"Downloaded the file to {Environment.CurrentDirectory}//downloaded-{fileName}.");
 
