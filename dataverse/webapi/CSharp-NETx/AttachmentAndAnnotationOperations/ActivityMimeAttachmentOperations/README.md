@@ -99,12 +99,12 @@ Adding 25mb.pdf...
                 FileSizeInBytes: 25870370
 Download attached files:
         Downloading filename: WordDoc.docx...
-        Saved the attachment to \bin\Debug\net6.0\DownloadedWordDoc.docx.
+        Saved the attachment to \bin\Debug\net10.0\DownloadedWordDoc.docx.
         Downloading filename: ExcelDoc.xlsx...
-        Saved the attachment to \bin\Debug\net6.0\DownloadedExcelDoc.xlsx.
+        Saved the attachment to \bin\Debug\net10.0\DownloadedExcelDoc.xlsx.
         Downloading filename: 25mb.pdf...
-        Saved the attachment to \bin\Debug\net6.0\Downloaded25mb.pdf.
-Saved the attachment to \bin\Debug\net6.0\DownloadedAgain25mb.pdf.
+        Saved the attachment to \bin\Debug\net10.0\Downloaded25mb.pdf.
+Saved the attachment to \bin\Debug\net10.0\DownloadedAgain25mb.pdf.
 
 Start: Create re-usable attachments
 Created an email template.

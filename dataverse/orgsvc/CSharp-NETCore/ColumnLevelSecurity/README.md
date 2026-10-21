@@ -236,7 +236,7 @@ Waited 30 seconds for the cache to update....
 Running the sample:
 
         ☑ Dumped column security information into this file:
-        \bin\Debug\net8.0\ColumnSecurityInfo.csv
+        \bin\Debug\net10.0\ColumnSecurityInfo.csv
 
         These are the secured columns in this environment:
         -account.opendeals
@@ -372,12 +372,12 @@ Waited 30 seconds for the cache to update....
 
         Exporting unmanaged solution...
         ☑ Exported unmanaged solution to this file:
-        \bin\Debug\net8.0\ColumnLevelSecuritySampleSolution.zip
+        \bin\Debug\net10.0\ColumnLevelSecuritySampleSolution.zip
 
 
         Exporting managed solution...
         ☑ Exported managed solution to this file:
-        \bin\Debug\net8.0\ColumnLevelSecuritySampleSolution_managed.zip
+        \bin\Debug\net10.0\ColumnLevelSecuritySampleSolution_managed.zip
 
 
 Cleaning up the sample:

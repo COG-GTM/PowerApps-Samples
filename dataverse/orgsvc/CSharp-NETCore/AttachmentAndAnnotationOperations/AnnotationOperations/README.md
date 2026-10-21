@@ -75,16 +75,16 @@ Current MaxUploadFileSize: 5242880
 Created an account record to associate notes with.
 Created note with attached Word document.
         Retrieved note with attached Word document.
-        Saved the Word document to \bin\Debug\net6.0\DownloadedWordDoc.docx.
+        Saved the Word document to \bin\Debug\net10.0\DownloadedWordDoc.docx.
 Updated note with attached Excel document.
         Retrieved note with attached Excel document.
-        Saved the Excel document to \bin\Debug\net6.0\DownloadedExcelDoc.xlsx.
+        Saved the Excel document to \bin\Debug\net10.0\DownloadedExcelDoc.xlsx.
 Updated MaxUploadFileSize to: 131072000
 Uploading 25mb.pdf...
         Uploaded 25mb.pdf
                 AnnotationId: d1b0db4c-89a2-ed11-aad1-000d3a9933c9
                 FileSizeInBytes: 25870370
-        Saved the PDF document to \bin\Debug\net6.0\Downloaded25mb.pdf.
+        Saved the PDF document to \bin\Debug\net10.0\Downloaded25mb.pdf.
 Deleted the account record.
 Current MaxUploadFileSize: 5242880
 ```

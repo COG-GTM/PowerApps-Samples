@@ -506,7 +506,7 @@ namespace PowerPlatform_Dataverse_CodeSamples
             string path = Path.Combine(Environment.CurrentDirectory, "ColumnSecurityInfo.csv");
 
             Console.WriteLine($"\t☑ Dumped column security information into this file:");
-            Console.WriteLine($"\t\\bin\\Debug\\net8.0\\ColumnSecurityInfo.csv\r\n");
+            Console.WriteLine($"\t\\bin\\Debug\\net10.0\\ColumnSecurityInfo.csv\r\n");
 
             #endregion Determine whether a column can be secured
 
@@ -1070,7 +1070,7 @@ namespace PowerPlatform_Dataverse_CodeSamples
             string filePath = Path.Combine(Environment.CurrentDirectory, filename);
 
             Console.WriteLine($"\t☑ Exported unmanaged solution to this file:");
-            Console.WriteLine($"\t\\bin\\Debug\\net8.0\\{filename}\r\n");
+            Console.WriteLine($"\t\\bin\\Debug\\net10.0\\{filename}\r\n");
 
             // Save solution
             using (var fs = File.Create(filePath))
@@ -1101,7 +1101,7 @@ namespace PowerPlatform_Dataverse_CodeSamples
             filePath = Path.Combine(Environment.CurrentDirectory, filename);
 
             Console.WriteLine($"\t☑ Exported managed solution to this file:");
-            Console.WriteLine($"\t\\bin\\Debug\\net8.0\\{filename}\r\n");
+            Console.WriteLine($"\t\\bin\\Debug\\net10.0\\{filename}\r\n");
 
             // Save solution
             using (var fs = File.Create(filePath))

@@ -76,7 +76,7 @@ namespace PowerApps.Samples
 
                 var downloadFileResponse = await service.SendAsync<DownloadFileResponse>(downloadFileRequest);
 
-                // File written to FileOperationsWithStream\bin\Debug\net6.0
+                // File written to FileOperationsWithStream\bin\Debug\net10.0
                 File.WriteAllBytes($"downloaded-{fileName}", downloadFileResponse.File);
                 Console.WriteLine($"Downloaded the file to {Environment.CurrentDirectory}//downloaded-{fileName}.");
 

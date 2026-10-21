@@ -115,7 +115,7 @@ namespace PowerPlatform.Dataverse.CodeSamples
                     entityReference: accountReference,
                     fileAttributeName: fileColumnLogicalName);
 
-                // File written to FileOperations\bin\Debug\net6.0
+                // File written to FileOperations\bin\Debug\net10.0
                 File.WriteAllBytes($"downloaded-{fileName}", downloadedFile);
                 Console.WriteLine($"Downloaded the file to {Environment.CurrentDirectory}//downloaded-{fileName}.");
 

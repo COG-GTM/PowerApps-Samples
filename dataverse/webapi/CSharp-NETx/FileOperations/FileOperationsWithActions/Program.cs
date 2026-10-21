@@ -80,7 +80,7 @@ namespace PowerApps.Samples
                     entityId: createdAccountRef.Id.Value,
                     filePropertyName: filePropertyName);
 
-                // File written to FileOperationsWithActions\bin\Debug\net6.0
+                // File written to FileOperationsWithActions\bin\Debug\net10.0
                 File.WriteAllBytes($"downloaded-{fileName}", file);
                 Console.WriteLine($"Downloaded the file to {Environment.CurrentDirectory}//downloaded-{fileName}.");
 
